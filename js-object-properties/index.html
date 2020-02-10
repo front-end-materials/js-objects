@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript object properties</title>
+  <style>
+    body { font: 1.5em Arial, Helvetica, sans-serif; }
+    p:hover { cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <p id="question">How far will the Tesla travel if you don’t drive like a maniac?</p>
+
+  <p id="answer"></p>
+
+<script>
+const car = {
+  manufacturer: "Tesla",
+  model: "Model S",
+  range: {
+    normal: "360",
+    ludicrous: "200"
+  },
+  colour: "red",
+  query: function(){
+    answer.innerHTML = `The <strong>${car.manufacturer} ${car.model}</strong> has a <strong>${car.range.normal} mile</strong> normal range.`;
+  }
+};
+
+question.addEventListener("click", car.query);
+
+</script>
+
+</body>
+</html>
